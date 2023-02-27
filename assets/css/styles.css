@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Merriweather:wght@300;400;700&display=swap');
+
+*{
+    font-family: Poppins;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /* padding: 15px; */
+
+}
+.navbar{
+    background-color: white;
+    padding: 0 !important;
+    color: black;
+}
+.navbar-brand img{
+    height: 40px;
+    padding-left: 20px;
+}
+.navbar-nav li{
+    padding: 0 10px;
+
+}
+.navbar-nav li a{
+    /* color: black !important; */
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.fa-bars{
+    color: #fff;
+    font-size: 40px !important;
+}
+.navbar-toggler{
+    outline: none !important;
+    color: black;
+}
+
+.title-home ,h1 ,h2{
+    font-weight: 900 !important;
+}
+
+
+.btn-order {
+	color: var(--bs-teal);
+	transition: 0.5s;
+    color: #fff ;
+    background-color: black;
+    border-top-left-radius: 2px;
+}
+
+.btn-order:hover,
+.btn-order:focus,
+.btn-order:active {
+	color: #fff;
+	background-color: black;
+}
+
+/* .redressed {
+	font-family: 'Redressed', cursive;
+}
+
+.merriweather {
+	font-family: 'Merriweather', serif;
+}
+
+.cc-navbar {
+	background-color: rgba(0, 0, 0, 0.55);
+	font-family: 'Merriweather', serif;
+	box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+	z-index: 99;
+}
+
+.cc-navbar .nav-link {
+	border-bottom: 1px solid transparent;
+	transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease;
+} */
+
+.cc-navbar .nav-link:hover {
+	padding-bottom: 20px;
+	border-bottom-color: var(--bs-teal);
+}
+
+.btn-order {
+	color: var(--bs-teal);
+	border-color: var(--bs-teal);
+	transition: 0.5s;
+}
+
+.btn-order:hover,
+.btn-order:focus,
+.btn-order:active {
+	color: #fff;
+	background-color: var(--bs-teal);
+}
+
+
+.banner{
+    background-color: gray;
+}
+
+#venue {
+    padding: 60px 0;
+  }
+#venue .container {
+    margin-bottom: 3px;
+  }
+  
+  #venue .venue-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+  }
+  
+  #venue .venue-info {
+    /* background: url("../img/venue-info-bg.jpg") top center no-repeat; */
+    background-size: cover;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  #venue .venue-info:before {
+    content: "";
+    /* background: red; */
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #venue .venue-info h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  @media (max-width: 574px) {
+    #venue .venue-info h3 {
+      font-size: 24px;
+    }
+  }
+  
+  #venue .venue-info p {
+    color: black;
+    margin-bottom: 0;
+  }
+  /* carousel catalog */
+  
+  .carousel-wrap {
+    margin: 90px auto;
+    padding: 0 5%;
+    width: 80%;
+    position: relative;
+  }
+  
+  /* fix blank or flashing items on carousel */
+  .owl-carousel .item {
+    position: relative;
+    z-index: 100; 
+    
+  }
+  
+  /* end fix */
+  .owl-nav > div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+  }
+  
+  .owl-nav i {
+    font-size: 52px;
+  }
+  
+  .owl-nav .owl-prev {
+    left: -30px;
+  }
+  
+  .owl-nav .owl-next {
+    right: -30px;
+  }
+  /* carousel */
+  @media (max-width: 767px) {
+		.carousel-inner .carousel-item > div {
+			display: none;
+		}
+		.carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+	}
+
+	.carousel-inner .carousel-item.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+
+	/* medium and up screens */
+	@media (min-width: 768px) {
+
+		.carousel-inner .carousel-item-end.active,
+		.carousel-inner .carousel-item-next {
+			transform: translateX(25%);
+		}
+
+		.carousel-inner .carousel-item-start.active, 
+		.carousel-inner .carousel-item-prev {
+			transform: translateX(-25%);
+		}
+	}
+
+	.carousel-inner .carousel-item-end,
+	.carousel-inner .carousel-item-start { 
+		transform: translateX(0);
+	}
+  /* carousel */
